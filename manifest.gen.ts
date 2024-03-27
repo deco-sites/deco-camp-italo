@@ -55,6 +55,7 @@ import * as $$$$$$43 from "./sections/Product/Wishlist.tsx";
 import * as $$$$$$44 from "./sections/Social/InstagramPosts.tsx";
 import * as $$$$$$45 from "./sections/Social/WhatsApp.tsx";
 import * as $$$$$$46 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$47 from "./sections/Weather/Weather.tsx";
 
 const manifest = {
   "loaders": {
@@ -97,23 +98,28 @@ const manifest = {
     "deco-sites/deco-camp-italo/sections/Images/ShoppableBanner.tsx": $$$$$$28,
     "deco-sites/deco-camp-italo/sections/Links/LinkTree.tsx": $$$$$$29,
     "deco-sites/deco-camp-italo/sections/Links/Shortcuts.tsx": $$$$$$30,
-    "deco-sites/deco-camp-italo/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$31,
-    "deco-sites/deco-camp-italo/sections/Miscellaneous/CookieConsent.tsx": $$$$$$32,
+    "deco-sites/deco-camp-italo/sections/Miscellaneous/CampaignTimer.tsx":
+      $$$$$$31,
+    "deco-sites/deco-camp-italo/sections/Miscellaneous/CookieConsent.tsx":
+      $$$$$$32,
     "deco-sites/deco-camp-italo/sections/Miscellaneous/Slide.tsx": $$$$$$33,
     "deco-sites/deco-camp-italo/sections/Newsletter/Newsletter.tsx": $$$$$$34,
     "deco-sites/deco-camp-italo/sections/Product/ImageGalleryFrontBack.tsx":
       $$$$$$35,
     "deco-sites/deco-camp-italo/sections/Product/NotFound.tsx": $$$$$$36,
-    "deco-sites/deco-camp-italo/sections/Product/NotFoundChallenge.tsx": $$$$$$37,
+    "deco-sites/deco-camp-italo/sections/Product/NotFoundChallenge.tsx":
+      $$$$$$37,
     "deco-sites/deco-camp-italo/sections/Product/ProductDetails.tsx": $$$$$$38,
     "deco-sites/deco-camp-italo/sections/Product/ProductShelf.tsx": $$$$$$39,
-    "deco-sites/deco-camp-italo/sections/Product/ProductShelfTabbed.tsx": $$$$$$40,
+    "deco-sites/deco-camp-italo/sections/Product/ProductShelfTabbed.tsx":
+      $$$$$$40,
     "deco-sites/deco-camp-italo/sections/Product/SearchResult.tsx": $$$$$$41,
     "deco-sites/deco-camp-italo/sections/Product/ShelfWithImage.tsx": $$$$$$42,
     "deco-sites/deco-camp-italo/sections/Product/Wishlist.tsx": $$$$$$43,
     "deco-sites/deco-camp-italo/sections/Social/InstagramPosts.tsx": $$$$$$44,
     "deco-sites/deco-camp-italo/sections/Social/WhatsApp.tsx": $$$$$$45,
     "deco-sites/deco-camp-italo/sections/Theme/Theme.tsx": $$$$$$46,
+    "deco-sites/deco-camp-italo/sections/Weather/Weather.tsx": $$$$$$47,
   },
   "apps": {
     "deco-sites/deco-camp-italo/apps/decohub.ts": $$$$$$$$$$$0,
