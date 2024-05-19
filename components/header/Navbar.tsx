@@ -14,6 +14,7 @@ import Image from "apps/website/components/Image.tsx";
 import NavItem from "./NavItem.tsx";
 import { navbarHeight } from "./constants.ts";
 import { Buttons, Logo } from "../../components/header/Header.tsx";
+import TotalLike from "../../islands/TotalLike.tsx";
 
 // Make it sure to render it on the server only. DO NOT render it on an island
 function Navbar(
@@ -140,6 +141,10 @@ function Navbar(
             {platform === "nuvemshop" && <CartButtonNuvemshop />}
           </div>
         )}
+        <div class="flex gap-1 items-center">
+          <Icon id="TopoLikes" size={24} />
+          <TotalLike />
+        </div>
       </div>
     </div>
   );

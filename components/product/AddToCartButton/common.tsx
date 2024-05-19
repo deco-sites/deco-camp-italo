@@ -3,6 +3,8 @@ import { useState } from "preact/hooks";
 import Button from "../../../components/ui/Button.tsx";
 import { sendEvent } from "../../../sdk/analytics.tsx";
 import { useUI } from "../../../sdk/useUI.ts";
+import { Bounce, toast, ToastContainer } from "react-toastify";
+import { ComponentType } from "preact";
 
 export interface Props {
   /** @description: sku name */
@@ -23,6 +25,17 @@ const useAddToCart = ({ eventParams, onAddItem }: Props) => {
 
       await onAddItem();
 
+      toast.success("Adicionado ao carrinho!", {
+        position: "bottom-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        theme: "light",
+        transition: Bounce,
+      });
+
       sendEvent({
         name: "add_to_cart",
         params: eventParams,
@@ -39,10 +52,13 @@ const useAddToCart = ({ eventParams, onAddItem }: Props) => {
 
 export default function AddToCartButton(props: Props) {
   const btnProps = useAddToCart(props);
-
+  const Toast = ToastContainer as ComponentType;
   return (
-    <Button {...btnProps} class="btn-primary">
-      Adicionar à Sacola
-    </Button>
+    <>
+      <Button {...btnProps} class="bg-[#17763b] hover:bg-[#237a44] text-white">
+        Adicionar à Sacola
+      </Button>
+      <Toast />
+    </>
   );
 }

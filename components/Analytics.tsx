@@ -4,6 +4,20 @@ import { scriptAsDataURI } from "apps/utils/dataURI.ts";
 /**
  * This function is usefull for sending events on click. Works with both Server and Islands components
  */
+
+export interface PostScore {
+  name?: "post_score";
+  params?: {
+    character?: string;
+    score?: number;
+    level?: number;
+  };
+}
+export const sendEventPostScore = <E extends PostScore>(event: E) => {
+  console.log(JSON.stringify(event, null, 2));
+  globalThis.window.DECO.events.dispatch(event);
+};
+
 export const SendEventOnClick = <E extends AnalyticsEvent>({ event, id }: {
   event: E;
   id: string;
