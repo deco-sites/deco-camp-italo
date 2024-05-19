@@ -79,7 +79,7 @@ export default function LikeCount(productid) {
           params: {
             score: count.value,
             level: 5,
-            character: String(productid),
+            character: String(productid.productid),
           },
         });
       }
